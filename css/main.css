@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  overflow: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-basis: auto;
+  height: 100vh; }
+
+.info__me {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem; }
+
+.info__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.info__title {
+  font-size: 8vw;
+  line-height: 1;
+  margin-bottom: 0.5rem; }
+
+.info__links {
+  background: #161616;
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.info__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+  transition: all 0.3s ease;
+  overflow: hidden; }
+
+.info__link:last-child {
+  border: none; }
+
+.info__icon {
+  padding: 0 3rem; }
+
+.info__link:nth-child(1):hover {
+  background: #1da1f2; }
+
+.info__link:nth-child(2):hover {
+  background: #282d31; }
+
+.info__link:nth-child(3):hover {
+  background: #202d3a; }
+
+.info__link:nth-child(4):hover {
+  background: #62499f; }
