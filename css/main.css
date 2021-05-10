@@ -76,18 +76,14 @@ a {
     opacity: 0; }
     .info__link-item:hover {
       bottom: 5px; }
-    .info__link-item:nth-child(1):hover {
-      background: #1da1f2; }
-    .info__link-item:nth-child(2):hover {
+    .info__link-item#item-github:hover {
       background: #282d31; }
-    .info__link-item:nth-child(3):hover {
+    .info__link-item#item-steam:hover {
       background: #202d3a; }
-    .info__link-item:nth-child(4):hover {
+    .info__link-item#item-discord:hover {
       background: #7289da; }
-    .info__link-item:nth-child(5):hover {
+    .info__link-item#item-twitch:hover {
       background: #62499f; }
-    .info__link-item:nth-child(6):hover {
-      background: #ff66aa; }
   .info__link {
     width: 100%;
     height: 100%;
