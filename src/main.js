@@ -12,7 +12,7 @@ function loadEventListeners() {
 
 function showDiscordTag() {
   setTimeout(() => {
-    desc.textContent = 'Draz#1000 on Discord';
+    desc.textContent = 'draz. on Discord';
   }, 175);
 }
 
