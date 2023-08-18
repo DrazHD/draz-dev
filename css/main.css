@@ -76,12 +76,14 @@ a {
     opacity: 0; }
     .info__link-item:hover {
       bottom: 5px; }
-    .info__link-item#item-github:hover {
-      background: #282d31; }
     .info__link-item#item-steam:hover {
       background: #202d3a; }
     .info__link-item#item-discord:hover {
       background: #7289da; }
+    .info__link-item#item-youtube:hover {
+      background: #ff0000; }
+    .info__link-item#item-spotify:hover {
+      background: #1db954; }
     .info__link-item#item-twitch:hover {
       background: #62499f; }
   .info__link {
