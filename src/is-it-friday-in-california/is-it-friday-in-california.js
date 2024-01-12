@@ -16,6 +16,7 @@ const FRIDAY_VIDEO_SRC = '../../assets/today-is-friday-in-california.mp4';
 const FRIDAY_TITLE = 'Today Is Friday In California';
 const NOT_FRIDAY_TITLE = '...';
 
+let isFridayCheckerEnabled = true;
 let isFridayModeOn = false;
 let isFridayVideoPlaying = false;
 
@@ -60,7 +61,10 @@ const toggleFridayMode = (isFriday) => {
   }
 };
 
-window.debugToggleFridayMode = () => toggleFridayMode(true);
+window.debugToggleFridayMode = (enableFridayMode = true) =>
+  toggleFridayMode(enableFridayMode);
+window.debugToggleFridayChecker = (enableFridayChecker = false) =>
+  (isFridayCheckerEnabled = enableFridayChecker);
 
 window.addEventListener('click', () => {
   if (hasUserClicked) return;
@@ -82,8 +86,10 @@ const getCurrentNarrowWeekdayCalifornia = () =>
 const isFridayInCalifornia = () => getCurrentNarrowWeekdayCalifornia() === 'F';
 
 const checkIsFridayInCalifornia = () => {
-  const isFriday = isFridayInCalifornia();
-  toggleFridayMode(isFriday);
+  if (isFridayCheckerEnabled) {
+    const isFriday = isFridayInCalifornia();
+    toggleFridayMode(isFriday);
+  }
 };
 
 const main = () => {
