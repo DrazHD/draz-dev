@@ -9,6 +9,10 @@ clickMeBtnElem.addEventListener('click', () => {
   clickMeBtnElem.textContent = CLICK_ME_BTN_CLICKED_TEXT;
 });
 
+const hasteyReactionElem = document.querySelector('#live-hastey-reaction');
+const fridayVideoContainerElem = document.querySelector(
+  '#friday-video-container',
+);
 const fridayVideoElem = document.querySelector('#friday-video');
 
 const FRIDAY_CHECK_INTERVAL_MS = 1000;
@@ -21,6 +25,8 @@ let isFridayModeOn = false;
 let isFridayVideoPlaying = false;
 
 const startFridayVideo = () => {
+  hasteyReactionElem.style.display = 'initial';
+  fridayVideoContainerElem.style.display = 'initial';
   fridayVideoElem.style.display = 'initial';
   fridayVideoElem.src = FRIDAY_VIDEO_SRC;
   fridayVideoElem.muted = false;
@@ -40,6 +46,8 @@ const startFridayMode = () => {
 };
 
 const stopFridayVideo = () => {
+  hasteyReactionElem.style.display = 'none';
+  fridayVideoContainerElem.style.display = 'none';
   fridayVideoElem.style.display = 'none';
   fridayVideoElem.src = '';
   isFridayVideoPlaying = false;
