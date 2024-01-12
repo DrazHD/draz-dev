@@ -55,7 +55,7 @@ const stopFridayMode = () => {
 const toggleFridayMode = (isFriday) => {
   if (isFriday && !isFridayModeOn) {
     startFridayMode();
-  } else if (isFridayModeOn) {
+  } else if (!isFriday && isFridayModeOn) {
     stopFridayMode();
   }
 };
